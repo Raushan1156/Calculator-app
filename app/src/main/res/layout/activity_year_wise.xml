@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".yearWise"
     android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,13 +42,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:hint="In %age please"
+            android:hint="@string/in_age_please"
             android:textSize="30sp"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:background="#E66397"
             android:textColor="@color/white"
-            android:inputType="number" />
+            android:inputType="number"
+            android:importantForAutofill="no" />
     </LinearLayout>
 
     <LinearLayout
@@ -74,13 +83,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:hint="In %age please"
+            android:hint="@string/in_age_please"
             android:textSize="30sp"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:background="#E66397"
             android:textColor="@color/white"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:importantForAutofill="no" />
     </LinearLayout>
 
     <LinearLayout
@@ -114,12 +124,13 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="30sp"
-            android:hint="In %age please"
+            android:hint="@string/in_age_please"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:background="#E66397"
             android:textColor="@color/white"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:importantForAutofill="no" />
     </LinearLayout>
 
     <LinearLayout
@@ -155,11 +166,12 @@
             android:gravity="center"
             android:textSize="30sp"
             android:textStyle="bold"
-            android:hint="In %age please"
+            android:hint="@string/in_age_please"
             android:layout_marginTop="10dp"
             android:background="#E66397"
             android:textColor="@color/white"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:importantForAutofill="no" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -173,7 +185,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:onClick="clickButton"
-            android:text="Calculate Marks"
+            android:text="@string/calculate_marks"
             android:textSize="30sp"
             android:textStyle="bold"
             android:layout_marginTop="30dp"
@@ -181,4 +193,6 @@
             android:textColor="@color/black"
             />
     </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

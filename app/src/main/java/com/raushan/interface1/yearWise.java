@@ -35,6 +35,7 @@ public class yearWise extends AppCompatActivity {
          mark4 = findViewById(R.id.mark4);
 
          Intent intent=new Intent(yearWise.this,yearWise2.class);
+
          String m1=mark1.getText().toString();
          double m11=Double.parseDouble(m1);
          String m2=mark1.getText().toString();
@@ -45,9 +46,9 @@ public class yearWise extends AppCompatActivity {
          double m44=Double.parseDouble(m4);
 
          double percentage=((m11+m22+m33+m44)/400)*100;
-         String temp1=Integer.toString((int) percentage);
+         String temp1=Double.toString(percentage);
          double grade=(percentage/10)-0.75;
-         String temp2=Integer.toString((int) grade);
+         String temp2=Double.toString(grade);
 
          String feed;
          if(percentage>90&& percentage<=100)
@@ -62,7 +63,7 @@ public class yearWise extends AppCompatActivity {
              feed="Above Average";
          else if(percentage<=50&&percentage>45)
              feed="Average";
-         else if(percentage<=45&&percentage>=40)
+         else if(percentage<=45&&percentage>=33)
                 feed="Poor";
          else
                 feed="Fail";

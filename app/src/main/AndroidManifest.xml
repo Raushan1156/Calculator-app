@@ -13,6 +13,12 @@
             android:name=".yearWise2"
             android:exported="true" />
         <activity
+            android:name=".SemesterMark2"
+            android:exported="true" />
+        <activity
+            android:name=".yearWise"
+            android:exported="true" />
+        <activity
             android:name=".p2g"
             android:exported="true" />
         <activity

@@ -32,4 +32,8 @@
     <string name="_2nd_year_marks">2nd Year Marks</string>
     <string name="_3rd_year_marks">3rd Year Marks</string>
     <string name="_4th_year_marks">4th Year Marks</string>
+    <string name="in_age_please">In %age please</string>
+    <string name="calculate_marks">Calculate Marks</string>
+    <string name="your_result_is">Your Result is</string>
+    <string name="performance">Performance</string>
 </resources>

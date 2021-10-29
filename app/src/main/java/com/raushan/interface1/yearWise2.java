@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class yearWise2 extends AppCompatActivity {
-    TextView result,totalPercentage,totalPercent,totalgpa,totalGradePoint,feeds,feedss;
+    TextView totalPercentage,totalPercent,totalgpa,totalGradePoint,feeds,feedss;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +24,9 @@ public class yearWise2 extends AppCompatActivity {
        Intent intent=getIntent();
 
         String Tpercent=intent.getStringExtra(yearWise.totalPercent);
-        totalPercent.setText(Tpercent+"%");
+        totalPercent.setText(Tpercent);
 
-        String Tgpa=intent.getStringExtra(SemesterMark.GradePoint);
+        String Tgpa=intent.getStringExtra(yearWise.GradePoint);
         totalGradePoint.setText(Tgpa);
 
         String fb=intent.getStringExtra(yearWise.FeedBack);
