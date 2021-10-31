@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">interface1</string>
+    <string name="app_name">Marks Calculator</string>
     <string name="semester_marks">Semester Marks</string>
     <string name="year_wise_marks">Year-wise Marks</string>
     <string name="grade_percentage"><![CDATA[Grade ---> Percentage]]></string>
@@ -36,4 +36,7 @@
     <string name="calculate_marks">Calculate Marks</string>
     <string name="your_result_is">Your Result is</string>
     <string name="performance">Performance</string>
+    <string name="caculate_marks">CACULATE MARKS</string>
+    <string name="todo">TODO</string>
+    <string name="exit">Exit</string>
 </resources>

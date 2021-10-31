@@ -11,8 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class yearWise extends AppCompatActivity {
     public static final String totalPercent="package com.raushan.interface1.Name1";
-    public static final String GradePoint="package com.raushan.interface1.Name1";
-    public static final String FeedBack="package com.raushan.interface1.Name1";
+    public static final String GradePoint="package com.raushan.interface1.Name2";
+    public static final String FeedBack="package com.raushan.interface1.Name3";
 
     TextView year1,year2,year3,year4,calculate;
     EditText mark1,mark2,mark3,mark4;
@@ -47,7 +47,7 @@ public class yearWise extends AppCompatActivity {
 
          double percentage=((m11+m22+m33+m44)/400)*100;
          String temp1=Double.toString(percentage);
-         double grade=(percentage/10)-0.75;
+         double grade=(percentage/10)+0.75;
          String temp2=Double.toString(grade);
 
          String feed;

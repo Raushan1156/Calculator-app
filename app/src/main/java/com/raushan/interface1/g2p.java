@@ -12,24 +12,24 @@ import android.widget.Toast;
 public class g2p extends AppCompatActivity {
 
     TextView textView;
-    EditText dolloramount;
+    EditText gp;
     Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_g2p);
         textView=findViewById(R.id.textView);
-        dolloramount=findViewById(R.id.dolloramount);
+        gp=findViewById(R.id.gp);
         button=findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(g2p.this, "Successfully Excuted.", Toast.LENGTH_SHORT).show();
-                String s=dolloramount.getText().toString();
+                String s=gp.getText().toString();
 //                int val=Integer.parseInt(s);
                 double val=Double.parseDouble(s);
-                double sgpa=(val*10)-.75;
-                String gradeval=Double.toString(sgpa);
+                double percent=(val-.75)*10;
+                String gradeval=Double.toString(percent);
                 textView.setText(gradeval+" %");
             }
         });

@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button semMarks,yrWise,g2p,p2g;
+    Button semMarks,yrWise,g2p,p2g,exit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         yrWise=findViewById(R.id.yrWise);
         g2p=findViewById(R.id.g2p);
         p2g=findViewById(R.id.p2g);
+        exit=findViewById(R.id.exit);
 
         semMarks.setOnClickListener(new  View.OnClickListener() {
             @Override
@@ -47,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent in4=new Intent(MainActivity.this,p2g.class);
                 startActivity(in4);
+            }
+        });
+
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.exit(0);
             }
         });
     }
